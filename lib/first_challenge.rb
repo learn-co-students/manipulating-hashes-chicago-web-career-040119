@@ -12,25 +12,17 @@ def first_challenge
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
-          # easy way, without iteration!!!
-  # contacts["Freddy Mercury"][:favorite_icecream_flavors].delete("strawberry")
-  # contacts 
-  #end
   
-          # iterating thru the hash 
-          # first layer iteration   person = "jon snow" or "freddy mercurry"
    contacts.each do |perosn, data|  
-        # second layer iteration  attribute = keys of:name, :email, :favorite_icecream_flavors
      data.each do |attribute, value|
        if attribute == :favorite_icecream_flavors 
         # iterating thru the icecream flavors array
          value.each do |flavor|
            value.delete("strawberry")
+       end
+     end
+   end 
  end
- end
- end 
- end
-  #remember to return your newly altered contacts hash!
   contacts
 end
 
