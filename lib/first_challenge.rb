@@ -18,7 +18,9 @@ def first_challenge
        if attribute == :favorite_icecream_flavors 
         # iterating thru the icecream flavors array
          value.each do |flavor|
-           value.delete("strawberry")
+           if flavor == "strawberry"
+             value.delete(flavor)
+        end
        end
      end
    end 
