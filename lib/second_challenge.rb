@@ -6,8 +6,7 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
-
+  #  return all values of the hash in one_dimensional array!
+  groceries.values.flatten
   
-
 end
