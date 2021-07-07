@@ -7,7 +7,10 @@ def second_challenge
   }
 
   #code your solution here!
+  list = groceries.collect do |cat, items|
+    items
+  end
 
-  
+  list.flatten
 
 end
